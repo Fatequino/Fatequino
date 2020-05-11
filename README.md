@@ -1,5 +1,7 @@
 # [Fatequino](https://fatequino.com.br/)
 
+![Projeto Fatequino](https://raw.githubusercontent.com/Fatequino/Fatequino/master/Controle/Imagens/Anota%C3%A7%C3%A3o%202020-05-11%20121530.png)
+
 Robô com inteligência artificial baseado em Arduino e Rapberry elaborado pela Fatec Carapicuíba.
 
 Disponível no repositório:
