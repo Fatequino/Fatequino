@@ -1,0 +1,65 @@
+int trigPin = 11;    // Trigger
+int echoPin = 12;    // Echo
+long duration, cm, inches;
+int IN1 = 4;
+int IN2 = 5;
+int IN3 = 6;
+int IN4 = 7;
+ 
+void setup() {
+  //Serial Port begin
+  Serial.begin (9600);
+  //Define inputs and outputs
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  
+  //Define os pinos como saida
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+}
+ 
+void loop() {
+  // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+  // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(5);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+ 
+  // Read the signal from the sensor: a HIGH pulse whose
+  // duration is the time (in microseconds) from the sending
+  // of the ping to the reception of its echo off of an object.
+  pinMode(echoPin, INPUT);
+  duration = pulseIn(echoPin, HIGH);
+ 
+  // Convert the time into a distance
+  cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+  inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
+  
+  Serial.print(inches);
+  Serial.print("in, ");
+  Serial.print(cm);
+  Serial.print("cm");
+  Serial.println();
+  
+  if(cm >= 100){
+  //Gira o Motor A e B no sentido horario
+digitalWrite(IN1, LOW);
+ digitalWrite(IN2, HIGH);
+ digitalWrite(IN3, LOW);
+ digitalWrite(IN4, HIGH);
+ Serial.print("SIGA!");
+ //Para andar para trás, troque os LOWs e HIGHs
+  } else {
+ 
+  //Para o motor A e B
+ digitalWrite(IN1, HIGH);
+ digitalWrite(IN2, HIGH);
+ digitalWrite(IN3, HIGH);
+ digitalWrite(IN4, HIGH);
+ Serial.print("PARE!");
+  }
+}
