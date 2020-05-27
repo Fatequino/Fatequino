@@ -41,3 +41,5 @@
 ![Listas](https://raw.githubusercontent.com/Fatequino/Fatequino/master/Controle/Imagens/imgControle/FatequinoTrello_2.png)
 
 >No campo de ***backlog*** deverá ser preenchido com cartões que contenham a atividade e uma descrição; ***To Do*** as atividades que deverão ser feitas dentro da sprint; ***In Progress*** as atividades que a equipe já está trabalhando; ***Impediments*** colocar se houve algum problema que impedisse de entregar alguma atividade; Por fim temos ***Done*** onde são movidos os cards de atividades finalizadas. Nós da equipe de controle estamos em todos os quadros para acompanhar e auxiliar os alunos.
+
+v1.0.0
