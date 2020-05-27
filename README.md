@@ -22,6 +22,8 @@ Responsável por gerenciar o projeto, mediar impedimentos e ser o ponto focal pa
 
 >Arquivos de imagens serão disponibilizadas na pasta de Controle dentro do repositório.
 
+[`Tutoriais para utilização do Git | Drive | Trello`](https://github.com/Fatequino/Fatequino/blob/master/Controle/README.md)
+
 ### Mecânica do Movimento
 Equipe responsável por pesquisar e desenvolver a solução básica de movimentação, alimentação e construção do Fatequino.
 
