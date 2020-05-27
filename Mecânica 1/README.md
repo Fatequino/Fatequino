@@ -21,4 +21,7 @@ Placa de controle dos motores
 Placa protoboard
 Sensor ultrassônico
 
+## Mecânica 2 - Braço Robótico
+
+O grupo de mecânica 2 ficou responsável pela criação dos métodos de controle do braço robótico, para isso foi realizada a compra de um braço robótico articulado com um código fornecido pelo fabricante, neste braço ficará acoplado uma câmera que será utilizada pela equipe de visão para realizar o reconhecimento facil de alunos, professores e outros integrantes da Fatec Carapicuiba. O código se baseia na emição de comandos de acionamento de servos motores conectados as articulações do braço robótico.
 
