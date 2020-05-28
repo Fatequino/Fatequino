@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> Equipe responsável por pesquisar e desenvolver a solução de interação do fatequino com alunos,professores funcionarios e visitantes.
+> Equipe responsável por pesquisar e desenvolver a solução de interação do fatequino com alunos, professores, funcionários e visitantes.
 
 
 ## Requisitos:☝️
@@ -17,9 +17,9 @@
 
 
 ```sh
-Verificar documentações no Drive em "Documentação" para mais informações
+Verificar documentações no Drive em "Documentação" para mais informações.
 ```
-> Nesta Branch temos atualmente disponibilizamos uma aplicação mobile documentada, além de documentos referentes a este tema.   
+> Nesta Branch temos atualmente disponibilizado uma aplicação mobile documentada, além de documentos referentes a este tema.   
 
 ## Autores
 
