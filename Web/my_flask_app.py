@@ -2,8 +2,10 @@ from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from FatequinoChatbot import FatequinoChatbot
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 bot = ChatBot('Fatequino Chat Bot',
     storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
