@@ -21,9 +21,9 @@ Para instalação, siga a documentação oficial: [Instalar MongoDb Server Commu
 
 #### Python 3 e PIP
 
-Python é a linguagme de programação utilizada para o desenvolvimento do chatbot.
+Python é a linguagem de programação utilizada para o desenvolvimento do chatbot.
 
-para instalação, baixe o instalador no site oficial: [Instalar Python](https://www.python.org/downloads/)
+Para instalação, baixe e execute o instalador no site oficial: [Instalar Python](https://www.python.org/downloads/)
 
 Juntamente com o Python, será instalado o utilitário `pip`. Esta ferramenta é utilizada para o gerenciamento de dependências de aplicações escritas em python.
 
@@ -31,7 +31,7 @@ Juntamente com o Python, será instalado o utilitário `pip`. Esta ferramenta é
 ## Execução
 
 
-Inicia sua instância do MongoDb na porta `27017`.
+Inicie sua instância do MongoDb na porta `27017`.
 
 Baixe ou clone este repositório (utilizando o git) e coloque-o em um diretório de sua preferência. Por exemplo:
 
