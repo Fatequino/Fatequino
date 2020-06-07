@@ -1,15 +1,15 @@
 import 'package:fatequino_app/screen/ChatScreen.dart';
 import 'package:flutter/material.dart';
-import 'style.dart' as style;
+import 'package:fatequino_app/helper/Style.dart' as style;
 
 class ChoiceScreen extends StatelessWidget {
-  /** Tela de escolha da comunicação (Wifi) */
+  //Tela de escolha da comunicação (Wifi) 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: style.secundaryColor,
+          backgroundColor: style.colorPrimary,
           title: Text(
             "FATEQUINO :)",
             style: TextStyle(
@@ -18,7 +18,7 @@ class ChoiceScreen extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: style.colorSecondary,
         body: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -29,8 +29,9 @@ class ChoiceScreen extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   "Conversa com \n\t\t\to fatequino: ",
-                  style: TextStyle(color: style.colorPrimary, fontSize: 30),
+                  style: TextStyle(color: Colors.white, fontSize: 30),
                   maxLines: 2,
+                  
                 ),
               ),
               Container(
@@ -45,7 +46,7 @@ class ChoiceScreen extends StatelessWidget {
                     );
                   },
                   icon: Icon(Icons.wifi),
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
                 color: style.colorPrimary,
               ),
@@ -54,15 +55,15 @@ class ChoiceScreen extends StatelessWidget {
                 child: Text(
                   "Web",
                   style: TextStyle(
-                    color: style.colorPrimary,
+                    color: Colors.white,
                     fontSize: 30,
                   ),
                 ),
               ),
               Container(
                 child: Text(
-                  "Versão 0.11",
-                  style: TextStyle(color: style.colorPrimary),
+                  "Versão 0.20",
+                  style: TextStyle(color: Colors.white),
                 ),
               )
             ],

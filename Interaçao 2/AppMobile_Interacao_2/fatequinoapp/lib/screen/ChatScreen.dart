@@ -1,11 +1,10 @@
-import 'package:fatequino_app/screen/widgets/mensage.dart';
+import 'package:fatequino_app/screen/widgets/MessageWidget.dart';
 import 'package:flutter/material.dart';
-import 'package:speech_recognition/speech_recognition.dart';
-import 'style.dart' as style;
-import 'package:fatequino_app/services/Apis_call.dart' as api;
+import 'package:fatequino_app/helper/Style.dart' as style;
+import 'package:fatequino_app/services/ChatBotServices.dart' as api;
 
 class ChatScreen extends StatefulWidget {
-  /**  Tela do chat */
+  //Tela do chat
   @override
   State<StatefulWidget> createState() {
     return _ChatScreen();
@@ -15,27 +14,44 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreen extends State<ChatScreen> {
   static TextEditingController txt = TextEditingController();
   static FocusNode _focusNode = new FocusNode();
-  static List<Widget> _chatMensagem = [];
-  String _text = "";
-  SpeechRecognition _speech;
+  static List<Widget> _chatMessageWidgets = [];
 
-  String _currentLocale;
 
-  bool _isListening = false;
+  static Color _chatBackgroundColor = style.colorSecondary;
+  static Color _chatInputTextColor = Color(0xFFC1C9CE);
+  static Color _chatInputHintColor = Colors.grey;
+  static Color _chatInputBackgroundColor = Color(0xFF2D383E);
+  
+  //static Color hintColor = lightGray;
+  String _currentMessage = "";
+  bool waitingMessage = false;
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: style.secundaryColor,
-          title: Text(
-            "FATEQUINO :)",
-            style: TextStyle(color: Colors.black),
+          titleSpacing: 0,
+          //leading: Icon(Icons.menu),
+          backgroundColor: style.colorPrimary,
+          title: Stack(
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: style.colorSecondary,
+                    child: Text('FQ'),
+                  ),
+                  Text("  Fatequino",style: TextStyle(color: style.colorSecondary)),
+                ]
+                ),
+            ],
           ),
           centerTitle: true,
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: _chatBackgroundColor,
         body: Column(
           children: <Widget>[
             Expanded(
@@ -44,31 +60,54 @@ class _ChatScreen extends State<ChatScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: _chatMensagem,
+                  children: _chatMessageWidgets,
                 ),
               ),
             ),
             SingleChildScrollView(
               child: Container(
                   margin: EdgeInsets.all(5),
-                  color: style.colorPrimary,
+                  color: _chatBackgroundColor,
                   child: Form(
                     child: TextFormField(
                       onChanged: (e) {
                         setState(() {
-                          _text = e;
+                          _currentMessage = e;
                         });
                       },
                       maxLines: 3,
                       minLines: 1,
                       controller: txt,
                       focusNode: _focusNode,
+                      cursorColor: style.colorSecondary,
                       keyboardType: TextInputType.multiline,
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        suffixIcon: sendMensagemButton(),
-                        prefixIcon: audiobutton(),
+                      style: TextStyle(
+                        color: _chatInputTextColor
                       ),
+                      decoration: InputDecoration(
+                        
+                        hintText: 'Digite uma mensagem',
+                        hintStyle: TextStyle(color: _chatInputHintColor),
+                        filled: true,
+                        fillColor: _chatInputBackgroundColor,
+                        contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                        enabledBorder: OutlineInputBorder(
+                          
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                          borderSide: BorderSide(color: Colors.grey, width: 2),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                          //borderSide: BorderSide(color: style.secundaryColor, width: 2),
+                        
+                        ),
+                        suffixIcon: sendMensagemButton(),
+                      ),
+                      // decoration: InputDecoration(
+                      //   border: OutlineInputBorder(),
+                      //   suffixIcon: sendMensagemButton(),
+                      //   //prefixIcon: audiobutton(),
+                      // ),
                     ),
                   )),
             ),
@@ -80,34 +119,46 @@ class _ChatScreen extends State<ChatScreen> {
 
   Widget sendMensagemButton() {
     /** Widget do botão de enviar mensagem */
+    
     return IconButton(
       icon: Icon(Icons.send),
-      color: Colors.yellow,
-      onPressed: _text.trim().isNotEmpty
+      color: style.colorPrimary,
+      // onPressed: _currentMessage.trim().isNotEmpty ? () {
+      //     Widget userMessage;
+      //     Widget fatequinoMessage;
+      //     userMessage = MensagemEnviada(mensagem: _currentMessage);
+      //     fatequinoMessage = MensagemRecebida(mensagem: "Oi, como vc está?");
+      //     setState(() {
+      //       _chatMessageWidgets.add(userMessage);
+      //       _chatMessageWidgets.add(fatequinoMessage);
+      //       cleanInput();
+      //     });
+      // } : null
+      onPressed: _currentMessage.trim().isNotEmpty && this.waitingMessage == false
           ? () {
-            /** if para escolher se app esta no modo teste ou ele envia algo para api */
-                api.sendMensagem(mensagem: this._text.trim()).then((value) {
+                String messageSent = _currentMessage;
+                cleanInput();
+                this.waitingMessage = true;
+                //if para escolher se app esta no modo teste ou ele envia algo para api 
+                api.sendMensagem(mensagem: this._currentMessage.trim()).then((value) {
                   Widget meu;
                   Widget fatequino;
-                  meu = Mensagem(
-                    mensagem: this._text,
-                    minha: true,
-                  );
-                  fatequino = Mensagem(
-                    mensagem: value,
-                    minha: false,
-                  );
+                  meu = MensagemEnviada(mensagem: messageSent);
+                  fatequino = MensagemRecebida(mensagem: value);
                   setState(() {
-                    _chatMensagem.add(meu);
-                    _chatMensagem.add(fatequino);
+                    _chatMessageWidgets.add(meu);
+                    _chatMessageWidgets.add(fatequino);
                     cleanInput();
                   });
+                  this.waitingMessage = false;
                 }).catchError((erro) {
                   print(erro.toString());
+                  this.waitingMessage = false;
                 });
+                
               }
           : null,
-    );
+     );
   }
 
   void cleanInput() async {
@@ -115,54 +166,8 @@ class _ChatScreen extends State<ChatScreen> {
     Future.delayed(Duration(milliseconds: 100), () {
       this.setState(() {
         txt.clear();
-        this._text = "";
+        this._currentMessage = "";
       });
     });
-  }
-
-  Widget audiobutton() {
-    /** Widget do botão de gravar audio */
-    _speech = SpeechRecognition();
-    _speech.setAvailabilityHandler((bool result) {
-      setState(() {
-      });
-    });
-
-    _speech.setCurrentLocaleHandler((String locale) {
-      setState(() {
-        _currentLocale = locale;
-      });
-    });
-
-    _speech.setRecognitionStartedHandler(() {
-      setState(() {
-        _isListening = true;
-      });
-    });
-
-    _speech.setRecognitionResultHandler((String texto) {
-      setState(() {
-        txt.text = texto;
-        _text = texto;
-      });
-    });
-
-    _speech.setRecognitionCompleteHandler(() {
-      setState(() {
-        _isListening = false;
-      });
-    });
-
-    _speech.activate().then((res) {
-      setState(() {
-      });
-    });
-    return IconButton(
-        icon: Icon(_isListening ? Icons.stop : Icons.mic),
-        onPressed: () {
-          _speech.listen(locale: _currentLocale).then((value) {
-            print("$value");
-          });
-        });
   }
 }
