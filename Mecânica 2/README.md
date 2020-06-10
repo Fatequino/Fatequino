@@ -1,7 +1,6 @@
 # [Mecânica](https://fatequino.com.br/construcao-do-fatequino/mecanica/)
 
-Fatequino é um projeto desenvolvido na disciplina de Tópicos especiais na Fatec Carapicuíba. Trata-se de um robô utilizando motores, sensores e uma placa de arduino para controle dos componentes de forma programática. Para inserir e executar o código na placa Arduíno é necessário a utilização da Arduino IDE, própria para este tipo de desenvolvimento.
-Atualmente o código permite a movimentação do robô para frente, ao encontra um obstáculo ele para e, se estiver muito próximo de uma parede à sua frente, dá ré e vira à esquerda, fazendo nova leitura de obstáculos à frente, se não houver mais impedimentos ele porssegue seu caminho.
+Fatequino é um projeto desenvolvido na disciplina de Tópicos especiais na Fatec Carapicuíba. A equipe de Mecânica 2 é responsável pela movimentação de um Braço Robótico para condução da câmera para recconhecimento facial de alunos e funcionários da Fatec Carapicuiba. Para isso será desenvolvida uma interface que permitirá a inserção de comandos de movimento pela equipe de visão, esses comandos serão necessários para que a equipe de visão possa posicionar a câmera na face das pessoas, permitindo o reconhecimento facial.
 
 Aqui você irá encontrar:
 - Mecânica
@@ -9,16 +8,16 @@ Aqui você irá encontrar:
 
 ## Mecânica
 
-2 motores
-Rodas 
+
 estrutura para suportar os componentes.
+Estrutura do Braço Mecânico
+Servos Motores
 
 ## Eletrônica
 
 Fiação
 Placa Arduino Uno
-Placa de controle dos motores
+Placa Raspberry
 Placa protoboard
-Sensor ultrassônico
-
-
+Sensor de presença
+Servos Motores
