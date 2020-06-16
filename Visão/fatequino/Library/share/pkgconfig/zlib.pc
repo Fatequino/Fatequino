@@ -1,0 +1,13 @@
+prefix=C:/Users/ronie/Anaconda2/envs/fatequino/Library
+exec_prefix=C:/Users/ronie/Anaconda2/envs/fatequino/Library
+libdir=C:/Users/ronie/Anaconda2/envs/fatequino/Library/lib
+sharedlibdir=C:/Users/ronie/Anaconda2/envs/fatequino/Library/lib
+includedir=C:/Users/ronie/Anaconda2/envs/fatequino/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

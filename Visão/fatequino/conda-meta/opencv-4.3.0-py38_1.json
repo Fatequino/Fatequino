@@ -1,0 +1,37 @@
+{
+  "build": "py38_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/win-64",
+  "constrains": [],
+  "depends": [
+    "libopencv 4.3.0 py38_1",
+    "py-opencv 4.3.0 py38h23f93f0_1"
+  ],
+  "extracted_package_dir": "C:\\Users\\ronie\\Anaconda2\\pkgs\\opencv-4.3.0-py38_1",
+  "features": "",
+  "files": [
+    ".nonadmin"
+  ],
+  "fn": "opencv-4.3.0-py38_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\ronie\\Anaconda2\\pkgs\\opencv-4.3.0-py38_1",
+    "type": 1
+  },
+  "md5": "94f210b5bc79de3923f50e8b9a61af8d",
+  "name": "opencv",
+  "package_tarball_full_path": "C:\\Users\\ronie\\Anaconda2\\pkgs\\opencv-4.3.0-py38_1.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "opencv",
+  "sha256": "cbe0192da066290d5749da10713446409decbcc5a50e9e16cf7fbcf2cc2eaf59",
+  "size": 20204,
+  "subdir": "win-64",
+  "timestamp": 1592065458409,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/opencv-4.3.0-py38_1.tar.bz2",
+  "version": "4.3.0"
+}
