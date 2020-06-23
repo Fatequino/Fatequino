@@ -18,7 +18,7 @@ Verificar guia de passos disponibilizadas na documentação.
 
 ## Autores
 
-👤 **Grupo Interação 2**
+👤 **Grupo Interação 2** 
 
 Give a ⭐️ if this project helped you!
 
