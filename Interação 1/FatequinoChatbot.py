@@ -9,7 +9,9 @@ class FatequinoChatbot():
         return self.trainer.train(conversa)
 
     def mensagemEnviada(self, mensagemRecebida):
+        print(mensagemRecebida)
         if ( float(self.bot.get_response(mensagemRecebida).confidence) > 0.5):
+            print('show')
             return self.bot.get_response(mensagemRecebida)
         return "Ainda estou timido para responder sobre isso"
 
