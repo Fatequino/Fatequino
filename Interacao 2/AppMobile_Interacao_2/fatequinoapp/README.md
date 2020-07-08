@@ -8,7 +8,7 @@
 
 > Aplicação mobile desenvolvida em Dart utilizando o framework Flutter fornecendo uma forma de acesso ao chatbot do robô Fatequino que irá prestar apoio a alunos, professores, funcionários e demais frequentantes da instituição de ensino Fatec de Carapícuiba. 
 
-### 📱[Aplicativo](https://drive.google.com/file/d/1BsuWUNS3WlI1t47gMNqaywbimV1584uB/view?usp=sharing)
+### 📱[Aplicativo](https://drive.google.com/file/d/1Gsol4_E2XOfeURxaAbt9Sz51Ym5cU_6i/view?usp=sharing)
 
 ## Instalação
 

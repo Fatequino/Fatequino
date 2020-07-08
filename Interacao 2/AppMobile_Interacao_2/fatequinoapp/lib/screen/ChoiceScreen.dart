@@ -1,6 +1,7 @@
 import 'package:fatequino_app/screen/ChatScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:fatequino_app/helper/Style.dart' as style;
+import 'package:flutter/widgets.dart';
 
 class ChoiceScreen extends StatelessWidget {
   //Tela de escolha da comunicação (Wifi) 
@@ -20,6 +21,12 @@ class ChoiceScreen extends StatelessWidget {
         ),
         backgroundColor: style.colorSecondary,
         body: Container(
+          decoration: new BoxDecoration(
+              image: new DecorationImage(
+                  colorFilter: new ColorFilter.mode(Colors.white.withOpacity(0.6), BlendMode.dstATop),
+                  image: new AssetImage('images/fatequino.png'),
+                  alignment: Alignment.topCenter)
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,7 +38,7 @@ class ChoiceScreen extends StatelessWidget {
                   "Conversa com \n\t\t\to fatequino: ",
                   style: TextStyle(color: Colors.white, fontSize: 30),
                   maxLines: 2,
-                  
+
                 ),
               ),
               Container(
