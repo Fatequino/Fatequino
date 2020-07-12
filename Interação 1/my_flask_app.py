@@ -11,7 +11,8 @@ bot = ChatBot('Fatequino Chat Bot',
     storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
     logic_adapters=[ 
         'chatterbot.logic.BestMatch',
-        {'import_path': 'disciplinaAdapter.DisciplinaAdapter'}  
+        {'import_path': 'disciplinaAdapter.DisciplinaAdapter'},
+        {'import_path': 'DiaAdapter.DiaAdapter'}  
     ],
     filters=[ 'chatterbot.filters.RepetitiveResponseFilter' ],
     input_adapter='chatterbot.input.TerminalAdapter',
