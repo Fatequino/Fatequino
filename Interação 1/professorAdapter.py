@@ -51,20 +51,18 @@ class ProfessorAdapter(LogicAdapter):
 
         if len(professores) == 0:
             return Statement(text='')
+        
+        
+        mensagem = 'O professor(a) {} leciona:\n'.format()
 
-        professor = sorted(professores, key=sort_item, reverse=True)[0]
+        for professor in professores:
+            dia = obter_dia_da_semana(professor['Dia'])
 
-        dia = obter_dia_da_semana(professor['Dia'])
-
-        mensagem = 'O(a) professor(a) {} dá aula de {} na {} as {} na sala {}.'.format(
-            professor['Professor'], professor['Disciplina'], dia, professor['Horario'], professor['Sala']
-        )
+            mensagem += '{} na {} às {} na sala {}\n'.format(
+                professor['Disciplina'], dia, professor['Horario'], professor['Sala']
+            )
 
         response_statement = Statement(text=mensagem)
         response_statement.confidence = 1 
 
         return response_statement
-
-def sort_item(item):
-    return item['Professor']
-      
