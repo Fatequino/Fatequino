@@ -12,7 +12,8 @@ bot = ChatBot('Fatequino Chat Bot',
     logic_adapters=[ 
         'chatterbot.logic.BestMatch',
         {'import_path': 'disciplinaAdapter.DisciplinaAdapter'},
-        {'import_path': 'DiaAdapter.DiaAdapter'}  
+        {'import_path': 'DiaAdapter.DiaAdapter'}  ,
+        {'import_path': 'professorAdapter.ProfessorAdapter'}  ,
     ],
     filters=[ 'chatterbot.filters.RepetitiveResponseFilter' ],
     input_adapter='chatterbot.input.TerminalAdapter',

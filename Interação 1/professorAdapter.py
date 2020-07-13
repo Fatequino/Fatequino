@@ -51,15 +51,14 @@ class ProfessorAdapter(LogicAdapter):
 
         if len(professores) == 0:
             return Statement(text='')
-        
-        
-        mensagem = 'O professor(a) {} leciona:\n'.format()
+
+        mensagem = ''
 
         for professor in professores:
             dia = obter_dia_da_semana(professor['Dia'])
 
-            mensagem += '{} na {} às {} na sala {}\n'.format(
-                professor['Disciplina'], dia, professor['Horario'], professor['Sala']
+            mensagem += 'O(a) professor(a) {} leciona {} na {} às {} na sala {} <br>'.format(
+                professor['Professor'], professor['Disciplina'], dia, professor['Horario'], professor['Sala']
             )
 
         response_statement = Statement(text=mensagem)
