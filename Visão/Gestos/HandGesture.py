@@ -9,15 +9,15 @@ import math
 import time
 from _datetime import datetime
 
-# Define put text font
+# Define fonte de texto colocado
 font = cv2.FONT_HERSHEY_SIMPLEX
-# Define the codec and create VideoWriter object
+# Define o codec e cria o objeto VideoWrite
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 record = cv2.VideoWriter('output/' + str(datetime.now()) + '.avi', fourcc, 20.0, (640, 480))
 
 
 def main():
-    # Capture from webcam
+    # Captura da webcam 
     cam = cv2.VideoCapture(0)
     fgbg = cv2.createBackgroundSubtractorMOG2()
 
@@ -28,7 +28,7 @@ def main():
         if ret is False:
             return
 
-        # MOstrar retângulo de ROI
+        # Mostrar retângulo de ROI
         cv2.rectangle(frame, (20, 20), (300, 300), (255, 255, 2), 4)  # retângulo mais externo
         ROI = frame[20:300, 20:300]
 
