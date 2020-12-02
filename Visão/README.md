@@ -85,3 +85,10 @@ Para mais informações à respeito do código, referências nos links abaixo:
 <http://www.paulvangent.com/2016/08/05/emotion-recognition-using-facial-landmarks/>
 
 <https://github.com/biankatpas/Libras>
+
+
+## Arduino & RaspBerry pi3 
+O código conta com dois arquivos na raiz do projeto, responsáveis por fazer o teste da comunicação ente o raspberry e o arduino. 
+Antes de executar o código python que envia informações ao arduíno é necessário levar em consideração o circuito que foi desenhado para
+demonstração dessa `situação-problema` (disponível no drive), além disso, certifique-se de que o id (atual '/dev/ttyACM0' ) do seu arduino esteja correto. 
+
