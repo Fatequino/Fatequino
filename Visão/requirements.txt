@@ -1,0 +1,4 @@
+numpy
+dlib
+opencv
+pillow
