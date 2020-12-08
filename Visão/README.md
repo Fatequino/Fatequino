@@ -44,7 +44,7 @@ O reconhecimento de gestos marca na visão da câmera uma região marcada em um 
 Instale o Anaconda no S.O. pelo seguinte link:
 <https://www.anaconda.com/products/individual>
 
-Após o Download (ou clone) do projeto, acesse a pasta **Fatequino\Visão**, crie o ambiente da aplicação:
+Após o Download (ou clone) do projeto, Utilizando o **Anaconda Prompt** acesse a pasta **Fatequino\Visão**, crie o ambiente da aplicação:
 
 	conda create --name visao
 
@@ -56,13 +56,7 @@ Após instalado:
 
 	instale as bibliotecas:
 
-	conda install -c conda-forge numpy -y
-
-	conda install -c conda-forge dlib -y
-
-	conda install -c conda-forge opencv -y
-
-	conda install -c conda-forge pillow -y
+	conda install -c conda-forge --file requirements.txt -y
 
 
 *caso queira conferir se foram instalados com êxito, digite o comando **conda list**
