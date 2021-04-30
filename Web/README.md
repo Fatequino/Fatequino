@@ -1,16 +1,3 @@
 # [Web](https://fatequino.com.br/construcao-do-fatequino/web/)
 
-Usar este arquivo para descrever as dependências e como executar.
-
-Aqui você irá encontrar:
-- Dependências
-- Como executar/instalar
-
-## Instalação
-
-bla bla bla
-
-## Execução/Instalação
-
-bla bla bla
-
+[Equipe de Web: preencher tutorial de como baixar, instalar e rodar o código]
