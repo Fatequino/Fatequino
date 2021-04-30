@@ -36,7 +36,7 @@ Equipe responsável por pesquisar e desenvolver a solução de identificação e
 
 >Será utilizado uma biblioteca do Python para fazer o reconhecimento facial com redes neurais.
 
-### [Interação](/Interação%201)
+### [Interação 1 e 2]
 Equipe responsável por pesquisar e desenvolver a solução de interação do Fatequino com alunos, professores, funcionários e visitantes.
 
 >Para fazer a interação com os usuários será utilizado um bot com inteligência artificial.
