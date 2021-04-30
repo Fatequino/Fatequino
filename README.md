@@ -25,14 +25,6 @@ Cada equipe terá uma branch para desenvolvimento e documentação do que foi ex
 * Testes
 
 ## Divisão de Trabalho
-### Controle
-Responsável por gerenciar o projeto, mediar impedimentos e ser o ponto focal para assuntos com o professor da matéria. 
-
->Para isso estamos utilizando o Trello para gerenciamento de atividades juntamente com o GitHub como repositório para código e documentação. Dessa maneira ficará mais fácil para o pessoal do próximo semestre se organizar.
-
->Arquivos de imagens serão disponibilizadas na pasta de Controle dentro do repositório.
-
-[`Tutoriais para utilização do Git | Drive | Trello`](https://github.com/Fatequino/Fatequino/blob/master/Controle/README.md)
 
 ### Mecânica do Movimento
 Equipe responsável por pesquisar e desenvolver a solução básica de movimentação, alimentação e construção do Fatequino.
