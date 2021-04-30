@@ -77,6 +77,7 @@ OBS: Os únicos arquivos de mídia permitidos no GitHub serão somente os pertin
         Utilizando os padrões de versionamento e adquirindo uma cultura de implementação de correção de bugs e melhorias que podem ser feitos a cada semestre acompanhando a nomenclatura adaptada da semantic versioning (ex. 1.2.4)  a seguir o padrão sugerido: 
 
 X.Y.Z =  
+
 “X” corresponde ao ano do versionamento.        
 “Y”  corresponde ao semestre de desenvolvimento.
 “Z”  corresponde ao patch de correção.
