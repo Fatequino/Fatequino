@@ -70,9 +70,9 @@ OBS: Os únicos arquivos de mídia permitidos no GitHub serão somente os pertin
 
 X.Y.Z =  
 
-“X” corresponde ao ano do versionamento.        
-“Y”  corresponde ao semestre de desenvolvimento.
-“Z”  corresponde ao patch de correção.
+* “X” corresponde ao ano do versionamento.        
+* “Y”  corresponde ao semestre de desenvolvimento.
+* “Z”  corresponde ao patch de correção.
 
 ## Padrão de Commit
 
