@@ -79,10 +79,10 @@ X.Y.Z =
 Os commits devem ser atômicos, se duas correções distintas são realizadas, elas devem ser implementadas em dois commits diferentes. As mensagens de correção de issue devem descrever o que mudou e fazer referência ao número da issue associada à mudança. 
 
 As sete regras de uma ótima mensagem de commit do Git 
-⦁    Separe o assunto do corpo com uma linha em branco
-⦁    Limite a linha de assunto a 50 caracteres
-⦁    Coloque a linha de assunto em maiúscula
-⦁    Não termine a linha de assunto com um ponto
-⦁    Use o humor imperativo na linha de assunto
-⦁    Envolva o corpo em 72 caracteres (Quebrar linha em 72) 
-⦁    Use o corpo para explicar o que e por quê vs. como
+* Separe o assunto do corpo com uma linha em branco
+* Limite a linha de assunto a 50 caracteres
+* Coloque a linha de assunto em maiúscula
+* Não termine a linha de assunto com um ponto
+* Use o humor imperativo na linha de assunto
+* Envolva o corpo em 72 caracteres (Quebrar linha em 72) 
+* Use o corpo para explicar o que e por quê vs. como
