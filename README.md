@@ -16,13 +16,13 @@ Cada equipe terá uma branch para desenvolvimento e documentação do que foi ex
 
 >Englobamos o projeto inteiro em um repositório chamado Fatequino, nele temos 7 pastas uma para **cada equipe**. Nessa nova versão da organização do uso do GitHub, escolhemos por separar melhor o motivo para uso da plataforma: Aqui, no GitHub, só serão armazenados códigos desenvolvidos pelas diferentes equipes do projeto, divididas entre:
 
-Interação I
-Interação II
-Visão
-Web
-Mecânica
-Estrutura do Robô
-Testes
+* Interação I
+* Interação II
+* Visão
+* Web
+* Mecânica
+* Estrutura do Robô
+* Testes
 
 ## Divisão de Trabalho
 ### Controle
