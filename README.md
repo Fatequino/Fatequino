@@ -66,7 +66,7 @@ OBS: Os únicos arquivos de mídia permitidos no GitHub serão somente os pertin
     A proposta de  padronização do github, foi feita através de uma conversa com o grupo de teste e tem as seguinte sugestões.
 
 -Versionamento do Fatequino
-        Utilizando os padrões de versionamento e adquirindo uma cultura de implementação de correção de bugs e melhorias que podem ser feitos a cada semestre acompanhando a nomenclatura adaptada da semantic versioning (ex. 1.2.4)  a seguir o padrão sugerido: 
+        Utilizando os padrões de versionamento e adquirindo uma cultura de implementação de correção de bugs e melhorias que podem ser feitos a cada semestre acompanhando a nomenclatura adaptada da semantic versioning (ex. mecanica_2021.2.4: Nome do que foi alterado)  a seguir o padrão sugerido: 
 
 X.Y.Z =  
 
