@@ -29,8 +29,8 @@ class DisciplinaAdapter(LogicAdapter):
         Return true if the input statement contains
         'what' and 'is' and 'temperature'.
         """
-        subject = ['disciplina', 'matéria', 'aula']
-        question = ['qual', 'quando', 'onde', 'quem']
+        subject = ['disciplina', 'matéria', 'aula', 'materias', 'disciplinas', 'sala']
+        question = ['qual', 'quando', 'onde', 'quem', 'quais']
 
         if any(x in statement.text.split() for x in question):
             if any(x in statement.text.split() for x in subject):
@@ -52,13 +52,15 @@ class DisciplinaAdapter(LogicAdapter):
         if len(disciplinas) == 0:
             return Statement(text='')
 
-        disciplina = sorted(disciplinas, key=sort_item, reverse=True)[0]
+        
+        mensagem = ""
 
-        dia = obter_dia_da_semana(disciplina['Dia'])
+        for disciplina in disciplinas:
+            dia = obter_dia_da_semana(disciplina['Dia'])
 
-        mensagem = 'A disciplina {} ocorreu toda(o) {} às {} com o(a) professor(a) {} na sala {}. São {} aulas.'.format(
-            disciplina['Disciplina'], dia, disciplina['Horario'], disciplina['Professor'], disciplina['Sala'], disciplina['Aulas']
-        )
+            mensagem += 'A disciplina {} ocorreu toda(o) {} às {} com o(a) professor(a) {} na sala {}. São {} aulas <br>'.format(
+                disciplina['Disciplina'], dia, disciplina['Horario'], disciplina['Professor'], disciplina['Sala'], disciplina['Aulas']
+            )
 
         response_statement = Statement(text=mensagem)
         response_statement.confidence = 1 

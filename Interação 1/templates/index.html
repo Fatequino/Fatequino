@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   </head>
 
   <body>
@@ -56,6 +57,32 @@
           <span>Olá! Eu sou o Fatequino.</span>
         </p>
       </div>
+      <div>
+        <table>
+            <tr>
+            <td>
+                <div>
+                    <button id="sugestao1" type="submit" value="tem aula hoje?" style="float: right; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">tem aula hoje?</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button id="sugestao2" type="submit" value="quando abre a secretaria?" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">quando abre a secretaria?</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                  <button id="sugestao3" type="submit" value="quando abre a biblioteca?" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">quando abre a biblioteca?</button>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <button id="sugestao4" type="submit" value="arquivos fatec" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">arquivos fatec</button>
+                </div>
+              </td>         
+            </tr>
+        </table>
+    </div>
       <div id="userInput">
         <input id="textInput" type="text" name="msg" placeholder="O que quer saber, caro humano?">
         <button id="buttonInput" type="submit" class="btn btn-danger">Enviar</button>
@@ -65,6 +92,5 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
-    
   </body>
 </html>

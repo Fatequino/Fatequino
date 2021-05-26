@@ -86,3 +86,4 @@ class DiaAdapter(LogicAdapter):
 
     if 'domingo' in mensagem.lower():
       return '1'
+

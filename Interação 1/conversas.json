@@ -1,0 +1,156 @@
+[
+    {
+        "main_category": "Filmes", 
+        "question": "Qual seu filme favorito?", 
+        "nbestanswers": [
+            "Eu gosto muito de Vingadores Ultimato", 
+            "O meu preferido é Homem-aranha de volta ao lar."
+        ], 
+        "answer": "Eu amo Doutor Estranho..", 
+        "id": "2020338"
+    },
+    {
+        "main_category": "CPS", 
+        "question": "O que significa CPS?", 
+        "nbestanswers": [
+            "Cristo, Posso Sair dessa faculdade? rs brincadeira, significa Centro Paula Souza"
+        ], 
+        "answer": "É a sigla para Centro Paula Souza", 
+        "id": "2020339"
+    }, 
+    {
+        "main_category": "CPS", 
+        "question": "Qual o endereço da Fatec?", 
+        "nbestanswers": [
+            "Em Carapicuiba, deeer"
+        ], 
+        "answer": "Av. Francisco Pignatari, 650 - Vila Gustavo Correia, Carapicuíba - SP, 06310-390", 
+        "id": "2020340"
+    }, 
+    {
+        "main_category": "CPS", 
+        "question": "Qual o telefone da secretaria?", 
+        "nbestanswers": [
+            "Telefone?"
+        ], 
+        "answer": "(11) 4184-8404", 
+        "id": "2020340"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Qual o site da Fatec?", 
+        "nbestanswers": [
+            "www.fateccarapicuiba.com.br"
+        ], 
+        "answer": "Aqui está o site da <a href='http://www.fateccarapicuiba.edu.br/'>Fatec</a>Carapicuiba onde você pode consultar os documentos mais atuais da Fatec se nao achar em meu <a href='https://drive.google.com/drive/folders/1n0GuGD-meSgFtyFqD6r3AH-7_LG4Q72u?usp=sharing'>repositório</a>. Além do mais voce pode consultar outras informações bem legais.", 
+        "id": "2020341"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "A Fatec tem secretaria virtual?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Aqui está o site da <a href='https://sites.google.com/view/secretariavirtualfatec/home'>Secretaria </a>Virtual.", 
+        "id": "2020342"
+    }, 
+    {
+        "main_category": "FATEC", 
+        "question": "Secretaria Virtual?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Aqui está o site da <a href='https://sites.google.com/view/secretariavirtualfatec/home'>Secretaria</a>Virtual.", 
+        "id": "2020343"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Quem é o Coordenador do curso de ADS?", 
+        "nbestanswers": [
+            "Iannace"
+        ], 
+        "answer": "é o professor Iannace", 
+        "id": "2020344"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Quem é a diretora da Fatec?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "A Profª Dra. Marcia Luiza Pires de Araújo", 
+        "id": "2020345"
+    },
+    {
+        "main_category": "Estagio", 
+        "question": "Com quem posso falar sobre estagio?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Você pode falar diretamento com a Adriana Marroni Zaniol Palombo Rossini.", 
+        "id": "2020346"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Onde fica a secretaria?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "A secretária se encontra no primeiro bloco passando pela biblioteca a direita.", 
+        "id": "2020347"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Onde fica a biblioteca?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "A biblioteca fica a esquerda após passar pelo segundo portão de entrada da Fatec.", 
+        "id": "2020348"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Como eu solicito segunda via da carteirinha?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Você pode solicitar a segunda via de sua carteirinha indo direto na secretaria ou mandando um e-mail para f143acad@cps.sp.gov.br", 
+        "id": "2020349"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Qual e-mail da Fatec?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "f143acad@cps.sp.gov.br", 
+        "id": "2020350"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Onde devo entregar atestado medico?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Você pode apresenta-lo diretamente ao professor que estavá lecionando na sua ausencia.", 
+        "id": "2020351"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Como me inscrevo nas proficiencias?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Aguarde o e-mail da Fatec contendo o forms para inscrição.", 
+        "id": "2020352"
+    },
+    {
+        "main_category": "FATEC", 
+        "question": "Iremos nos sair bem nesta entrega?", 
+        "nbestanswers": [
+            "SIM"
+        ], 
+        "answer": "Claro, meu pai e criador Mario Marques vai adorar. Mas fique tranquilo, agora mesmo estou enviando um e-mail para ele aprovar vocês.", 
+        "id": "2020343"
+    }
+]

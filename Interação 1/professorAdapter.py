@@ -29,8 +29,8 @@ class ProfessorAdapter(LogicAdapter):
         Return true if the input statement contains
         'what' and 'is' and 'temperature'.
         """
-        subject = ['professor', 'professsora', 'prof']
-        question = ['qual', 'quando', 'onde', 'quem']
+        subject = ['professsor', 'professora', 'prof']
+        question = ['qual', 'quando', 'onde', 'quem', 'quais']
 
         if any(x in statement.text.split() for x in question):
             if any(x in statement.text.split() for x in subject):
