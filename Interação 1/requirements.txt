@@ -1,0 +1,5 @@
+Flask==1.0.2
+ChatterBot==1.0.4
+chatterbot-corpus==1.2.0
+flask-cors==3.0.8
+pymongo==3.10.1

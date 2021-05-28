@@ -1,0 +1,8 @@
+[
+    {"Local":"Secretaria", "Dias":"de segunda a sexta", "HorarioInicio":"10:00", "HorarioFim":"13:00"},
+    {"Local":"Secretaria", "Dias":"de segunda a sexta", "HorarioInicio":"14:00", "HorarioFim":"16:00"},
+    {"Local":"Secretaria", "Dias":"de segunda a sexta", "HorarioInicio":"18:00", "HorarioFim":"20:00"},
+    {"Local":"Biblioteca", "Dias":"segunda", "HorarioInicio":"08:00", "HorarioFim":"17:00"},
+    {"Local":"Biblioteca", "Dias":"de terça a sexta", "HorarioInicio":"08:00", "HorarioFim":"22:00"}
+    
+]

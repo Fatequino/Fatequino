@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+      <a class="navbar-brand" href="https://fatequino.com.br">
+        <img src="https://fatequino.com.br/wp-content/uploads/2019/05/cropped-fatequino_site-header-1.png" style="width: 170px;height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-center w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="https://fatequino.com.br/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://fatequino.com.br/sobre/">Sobre o Projeto</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              O Projeto Fatequino +
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/">Construção do Fatequino</a>
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/controle/">Controle</a>
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/interacao/">Interação</a>
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/mecanica/">Mecânica do Movimento</a>
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/web/">Presença na WEB</a>
+                  <a class="dropdown-item" href="https://fatequino.com.br/construcao-do-fatequino/visao/">Visão</a>
+
+                  
+              </div>
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link active" href="https://fatequino.com.br/chatbot">Chatbot <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://fatequino.com.br/teste-documentos/">Documentos</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="https://fatequino.com.br/fale-conosco/">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="chat container">
+      <div id="chatbox">
+        <p class="botText">
+          <img class="avatar" src="https://fatequino.com.br/wp-content/uploads/fatequino-avatar2.png" alt="avatar">
+          <span>Olá! Eu sou o Fatequino.</span>
+        </p>
+      </div>
+      <div>
+        <table>
+            <tr>
+            <td>
+                <div>
+                    <button id="sugestao1" type="submit" value="tem aula hoje?" style="float: right; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">tem aula hoje?</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button id="sugestao2" type="submit" value="quando abre a secretaria?" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">quando abre a secretaria?</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                  <button id="sugestao3" type="submit" value="quando abre a biblioteca?" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">quando abre a biblioteca?</button>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <button id="sugestao4" type="submit" value="arquivos fatec" style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#2D888F; color:white;border-radius:6px; font-size: 13px; font-family:helvetica, serif;text-decoration:none;">arquivos fatec</button>
+                </div>
+              </td>         
+            </tr>
+        </table>
+    </div>
+      <div id="userInput">
+        <input id="textInput" type="text" name="msg" placeholder="O que quer saber, caro humano?">
+        <button id="buttonInput" type="submit" class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+  </body>
+</html>
