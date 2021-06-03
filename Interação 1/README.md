@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # [Interação](https://fatequino.com.br/construcao-do-fatequino/interacao/)
 
 Este módulo do projeto tem como objetivo desenvolver um chatbot
