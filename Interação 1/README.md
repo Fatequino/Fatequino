@@ -1,47 +1,68 @@
-# INTALAÇÃO DO AMBIENTE PARA O CHATBOT
+# [Interação](https://fatequino.com.br/construcao-do-fatequino/interacao/)
 
-Para iniciar o chatbot do Fatequino em sua máquina, os seguintes softwares são necessários:
+Este módulo do projeto tem como objetivo desenvolver um chatbot
+capaz de fornecer ao usuário informações sobre a Fatec Carapicuíba.
+Caso tenha dificuldade em instalar os softwares, leia a documentação README_COMPLEMENTO
 
-* MongoDB, versão 4.x.x
-* Python3, versão 3.7.x
-* pip, versão 19.x.x
-* MONGODB
-É possível baixar o MongoDB no link oficial do programa:
+## Instalação
 
-https://www.mongodb.com/try/download/community
+Para iniciar o chatbot do Fatequino em sua máquina, os seguintes softwares
+são necessários:
 
->No site escolha o MongoDB Community Server, e esolha a opção do seu sistema operacional, nesse caso estamos usando o Windows, mas é aceito Linux e IOS também. >Lembre -se de utilizar a versão mais recente.
+- MongoDB, versão 4.x.x
+- Python3, versão 3.7.x
+- pip, versão 19.x.x
 
->Após o término do download, clique no programa e aceite as condições de uso e escolha a opção complete
+#### Mongo DB
 
-Atente-se ao caminho que o MongoDB foi instalado, caso não tenha modificado o caminho de instalação o local que ele foi instalado normalmente é: Disco Local > Arquivos de Programas > MongoDB > Server > “versão baixada” > bin. Dentro da pasta temos dois arquivos importantes o mongo e mongod.
+O MongoDb Server é o sistema de banco de dados utilizado pela aplicação.
 
-O Mongod é um servidor do banco de dados e o Mongo é uma aplicação shell, utilizado para digitar as linhas de comandos de interação, exclusão, inclusão ou buscar um determinado documento dentro do bando de dados do MongoDB. Para podermos utilizá-lo sem problemas no prompt é preciso criar uma variável de ambiente.
+Para instalação, siga a documentação oficial: [Instalar MongoDb Server Community Edition](https://docs.mongodb.com/manual/administration/install-community/)
 
-## 1.2 VARIÁVEL DE AMBIENTE
+#### Python 3 e PIP
 
->No caso do Windows basta digitar na caixa de pesquisa “variáveis de ambiente” ou então pode ir pelo caminho “Painel de Controle > Sistemas e Segurança > Sistemas > Configurações Avançadas do Sistema”.
+Python é a linguagem de programação utilizada para o desenvolvimento do chatbot.
 
->Ao acessar essas configurações escolha a opção variáveis de ambiente
+Para instalação, baixe e execute o instalador no site oficial: [Instalar Python](https://www.python.org/downloads/)
 
->Nessa nova janela teremos duas opções variáveis de usuário e variáveis do sistema, a melhor opção é a segunda, para não ter problema em acessá-lo, escolha a variável Path, selecione a e clique em editar.
+Juntamente com o Python, será instalado o utilitário `pip`. Esta ferramenta é utilizada para o gerenciamento de dependências de aplicações escritas em python.
 
->Após clicar em editar, uma nova janela irá abrir e clique em Novo
+## Execução
 
->Acrescente o caminho que está instalado o mongod, normalmente o caminho é: C:\Program Files\MongoDB\Server\4.4\bin
+Inicie sua instância do MongoDb na porta `27017`.
 
->Lembrando que o 4.4 é a versão, então atente-se qual foi a versão instalada no computador. Após preencher os valores clique em todos os OK, para salvar, caso contrário o caminho não será salvo. Para saber se está correto e o caminho funcionado, use o prompt e digite: mongod -version Se a versão aparecer está correto, caso contrário verifique se o caminho e o nome da variável estão corretos.
+Baixe ou clone este repositório (utilizando o git) e coloque-o em um diretório de sua preferência. Por exemplo:
 
-Uma dica é abrir outro cmd caso você tenha usado antes de fazer a variável de ambiente. Depois é preciso subir o banco, basta digitar mongod. Caso aja um problema exception in initAndListen: 29 Data directory C:\data\db\not found., terminating Isso siginifica que ele não esta encontrando o diretório data e para isso basta seguir os comandos: • cd.. (para voltar no diretório anterior) digite até ficar no “C:>”; • md data (cria um diretório chamado data); • cd data (para entrar dentro do diretório data); • md db (cria um diretório db); • cd db (entrar dentro do diretório db) • mongod (para inicializar o MongoDB)
+Windows:
 
-A janela não poderá ser fechada, caso contrário é como se estivéssemos encerrando o servidor.
+> c:/fatequino
 
-## PYTHON E PIP
->Para instalação do python baixe o no link abaixo: https://www.python.org/downloads/
+Linux:
 
->Escolha a versão mais atualizada e execute. Antes de clicar em Install Now, selecione a opção Add Python to PATH, isso irá poupar o trabalho de criar uma variável de ambiente. Caso tenha esquecido de selecionar essa opção é só seguir o passo-a-passo no tópico 1.2 VARIÁVEL DE AMBIENTE. Depois de clicar em Install Now, a próxima janela será Optional Feature e deixe tudo selecionado (padrão). A tela Advance Optional, não precisa marcar ou desmarcar nenhum item, deixe padrão. Nessa mesma tela se atente ao caminho que o Python esta sendo instalado, caso não tenha marcado a opção de Add Python to PATH é melhor copiar e colar esse caminho, para utilizar mais tarde. Depois de instalado use o prompt para ver se deu certo com o comando python -V
+> ~/fatequino
 
-Caso não apareça verifique nas variáveis de ambiente se foi criado o PATH python.
+Crie uma variável de ambiente chamada `FLASK_APP` com o valor `my_flask_app.py`.
+
+Utilizando uma ferramente de linha de comando de sua preferência, acesse o caminho do chatbot, por exemplo:
+
+Windows:
+
+> c:/fatequino/Interação 1
+
+Linux:
+
+> ~/fatequino/Interação 1.
+
+Instale as dependências da aplicação rodando o seguinte comando: `pip install -r requirements.txt`
+Caso de erro ao instalar com esse comando, é melhor instalar um de cada vez.
+
+```
+Atenção: talvez seja necessário executar o comando acima no modo administrador.
+```
+
+Execute o comando `python -m flask run` para executar o programa.
+
+Feito isso, a aplicação será iniciada e poderá ser acessada no endereço: `localhost:5000`
 
 ## Post da base de dados do ChatBot
 
@@ -71,3 +92,6 @@ Caso não apareça verifique nas variáveis de ambiente se foi criado o PATH pyt
 
 Pronto, seguindo estes passos o bot já terá acesso as informações.
 
+##Acessoo ao drive
+Login: fatecfatequino@gmail.com
+Senha: fatequino2020
