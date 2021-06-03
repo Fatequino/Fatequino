@@ -91,7 +91,3 @@ Feito isso, a aplicação será iniciada e poderá ser acessada no endereço: `l
 >Clique no botão "Send" para fazer o envio dos dados para a base do mongoDB.
 
 Pronto, seguindo estes passos o bot já terá acesso as informações.
-
-##Acessoo ao drive
-Login: fatecfatequino@gmail.com
-Senha: fatequino2020
