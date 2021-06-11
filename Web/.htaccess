@@ -1,0 +1,13 @@
+#This Apache config file was created by Duplicator Installer on 2021-06-10 16:15:19.
+#The original can be found in archived file with the name .htaccess__[HASH]
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /Fatequino/W2/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Fatequino/W2/index.php [L]
+</IfModule>
+# END WordPress
