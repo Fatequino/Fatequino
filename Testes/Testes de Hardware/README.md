@@ -56,7 +56,7 @@ Para realizar o acesso ao código da plataforma é necessário que se obtenha a 
 </p>
 
 Caso esta aba não esteja disponível ela pode ser liberada através da seguinte configuração:
-Arquivos > Opções > Personalizar Faixa de Opções - Selecionar a caixa de seleção "Desenvolvedor"
+- Arquivos > Opções > Personalizar Faixa de Opções - Selecionar a caixa de seleção "Desenvolvedor"
 
 <p align="center">
   <img src="mdfiles/Configuração.png"/>
