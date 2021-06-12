@@ -10,10 +10,7 @@ As mudanças feitas localmente não afetaram o site original, portanto, é poss�
 
 Dito isso, as mudanças que forem definitivas deverão ser repetidas no site original.
 
-Acesse o site https://fatequino.com.br/, clique no botão de login e utilize as credenciais abaixo:
-
-     Login: fatequino
-     Senha: u$%o*4ssxyPCsXQ4
+Acesse o site https://fatequino.com.br/, clique no botão de login e utilize as credenciais do fatequino
 
 Uma vez logado, acesse o link https://fatequino.com.br/wp-admin/
 
