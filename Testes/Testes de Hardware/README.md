@@ -27,5 +27,5 @@ Esta plataforma foi desenvolvida na linguagem VBA (Visual Basic for Applications
 Para utilizar a plataforma de registros deve ser reallizado o download do arquivo [Execuções de Testes.xlsm](Execuções de Testes.xlsm). Ao acessar o arquivo pode ser necessária a habilitação do funcionamento das macros (funções prógramadas da planilha excel).
 Caso seja exibido o aviso abaixo, deve ser pressionado o botão indicado "Habilitar Conteúdo".
 
-<img src="mdfiles/HabilitarConteudo.png" align="center" height="200px"/> 
+<img src="mdfiles/HabilitarConteúdo.png" align="center" height="200px"/> 
 
