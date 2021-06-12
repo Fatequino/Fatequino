@@ -37,7 +37,7 @@ Neste próximo passo, iremos utilizar o xampp, mas se quiser pode usar qualquer 
 
 12. Acesse a pasta do Xampp, procure htdocs, crie uma pasta para os arquivos baixados e os cole lá
 
-13. Digite localhost/nome_da_pasta/installer.php para começar a instalação do ambiente de desenvolvimento. Deixe como na imagem ao lado:
+13. Digite localhost/nome_da_pasta/installer.php para começar a instalação do ambiente de desenvolvimento.
 
 14. Em “Action” altere para “Create new database”
 Obs: Pode ser necessário alterar o User para “root” e clique em “Next”
