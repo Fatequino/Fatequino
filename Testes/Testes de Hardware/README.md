@@ -15,7 +15,7 @@ A Proposta de testes para a movimentação do robô Fatequino consiste na verifi
 
 6. O primeiro percurso tem como objetivo verificar a capacidade do robô em desviar de um obstáculo em seu caminho, retornar ao trajeto e concluí-lo.
 
-## Plataforma de Registro <img src="https://img.icons8.com/color/48/000000/ms-excel.png" align="right"/> <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcristianoash.wordpress.com%2F2016%2F09%2F07%2Feditor-vba-desconfigurado%2F&psig=AOvVaw3goRIQw6CnP35jMIKG0AUD&ust=1623560217221000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJj38KOnkfECFQAAAAAdAAAAABAD" align="right"/>
+## Plataforma de Registro <img src="https://img.icons8.com/color/48/000000/ms-excel.png" align="right"/> <img src="https://www.hscripts.com/freeimages/logos/brands-of-the-world/vba/visual-basic-for-applications-500.gif" align="right"/>
 
 
 Com o intuito de garantir a padronização dos registros de testes a serem efetuados, foi desenvolvida uma plataforma intermediária, por onde as execuções de testes serão adicionadas a uma planilha única.
