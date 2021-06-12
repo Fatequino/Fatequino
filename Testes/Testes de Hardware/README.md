@@ -25,9 +25,14 @@ Esta plataforma foi desenvolvida na linguagem VBA (Visual Basic for Applications
 - ### Instalação
 
 Para utilizar a plataforma de registros deve ser reallizado o download do arquivo [Execuções de Testes.xlsm](Execuções de Testes.xlsm). Ao acessar o arquivo pode ser necessária a habilitação da edição do conteúdo, que deve ser confirmada caso seja exibida a mensagem abaixo, pressionando o botão "Habilitar Edição".
-<img src="mdfiles/HabilitarEdicao.png" float="center" height="200px"/> 
+
+<p align="center">
+  <img src="mdfiles/HabilitarEdicao.png" height="150px"/> 
+</p>
+
 Outra configuração que pode ser necessária é em relação à habilitação do funcionamento das macros (funções prógramadas da planilha excel).
 Caso seja exibido o aviso abaixo, deve ser pressionado o botão indicado "Habilitar Conteúdo".
 
-<img src="mdfiles/HabilitarConteúdo.png" float="center" height="200px"/> 
-
+<p align="center">
+  <img src="mdfiles/HabilitarConteúdo.png" height="200px"/> 
+</p>
