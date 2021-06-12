@@ -61,3 +61,11 @@ Arquivos > Opções > Personalizar Faixa de Opções - Selecionar a caixa de sel
 <p align="center">
   <img src="mdfiles/Configuração.png"/>
 </p>
+
+Com a aba Desenvolvedor habilitada, através da opção "Visual Basic", a primeira da aba, pode ser acessada a área de desenvolvimento do Microsoft Excel, na qual estarão presentes os designs dos formulários e seus respectivos códigos. Na sessão Projeto podem ser visualizados os formulários "Inicializacao", "Registro 1" e "Registro 2". 
+- Com duplo clique em seus nomes será exibido o layout dos formulários e as opções de configuração.
+- Pressionando a tecla F7 será exibido o código referente ao formulário aberto.
+
+<p align="center">
+  <img src="mdfiles/Formularios.png"/>
+</p>
