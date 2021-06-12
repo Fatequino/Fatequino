@@ -15,5 +15,5 @@ A Proposta de testes para a movimentação do robô Fatequino consiste na verifi
 		</td>
 
 
-	</tr>
+	
 </table>
