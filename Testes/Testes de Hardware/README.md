@@ -15,7 +15,7 @@ A Proposta de testes para a movimentação do robô Fatequino consiste na verifi
 
 * O primeiro percurso tem como objetivo verificar a capacidade do robô em desviar de um obstáculo em seu caminho, retornar ao trajeto e concluí-lo.
 
-## Plataforma de Registro <img src="https://img.icons8.com/color/48/000000/ms-excel.png" align="right" height="50px"/> <img src="https://mk0analysistabsx3rvl.kinstacdn.com/wp/wp-content/uploads/2013/08/excel-vba.png" align="right" height="50px" color="#fff"/>
+## Plataforma de Registro <img src="https://img.icons8.com/color/48/000000/ms-excel.png" align="right" height="50px"/>
 
 
 Com o intuito de garantir a padronização dos registros de testes a serem efetuados, foi desenvolvida uma plataforma intermediária, por onde as execuções de testes serão adicionadas a uma planilha única.
@@ -23,4 +23,9 @@ Com o intuito de garantir a padronização dos registros de testes a serem efetu
 Esta plataforma foi desenvolvida na linguagem VBA (Visual Basic for Applications) e está atrelada a uma planilha Excel, na qual serão armazenadas as execuções de testes e pode ser encontrada no arquivo [Execuções de Testes.xlsm](Execuções de Testes.xlsm).
 
 - ### Instalação
+
+Para utilizar a plataforma de registros deve ser reallizado o download do arquivo [Execuções de Testes.xlsm](Execuções de Testes.xlsm). Ao acessar o arquivo pode ser necessária a habilitação do funcionamento das macros (funções prógramadas da planilha excel).
+Caso seja exibido o aviso abaixo, deve ser pressionado o botão indicado "Habilitar Conteúdo".
+
+<img src="mdfiles/HabilitarConteudo.png" align="center" height="200px"/>
 
