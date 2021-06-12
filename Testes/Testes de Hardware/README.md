@@ -13,9 +13,7 @@ A Proposta de testes para a movimentação do robô Fatequino consiste na verifi
 			O segundo percurso tem como objetivo a verificação da capacidade do robô em detectar um obstáculo em seu trajeto e realizar a parada, impedindo a colisão.
 			<img src="readmefiles/Teste2.gif" alt="Representação do Teste 2" style="width:200px;"/>
 		</td>
-	</tr>
-	
-	<tr>
+
 		<td>
 			O terceiro percurso tem como objetivo verificar gradualmente a capacidade do robô em realizar curvas exigidas em seu trajeto. Iniciando pela avaliação sobre uma curva em ângulo obtuso (135°).
 			<img src="readmefiles/Teste3.gif" alt="Representação do Teste 3" style="width:200px;"/>
