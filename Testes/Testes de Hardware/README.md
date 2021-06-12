@@ -36,3 +36,17 @@ Caso seja exibido o aviso abaixo, deve ser pressionado o botão indicado "Habili
 <p align="center">
   <img src="mdfiles/HabilitarConteúdo.png"/> 
 </p>
+
+- ### Utilização
+
+Após o final da configuração, a plataforma pode ser acessada por meio do botão "Registrar nova execução de testes" e os registros já realizados podem ser consultados através das abas da planilha. Conforme imagem abaixo.
+
+<p align="center">
+  <img src="mdfiles/BotaoAbas.png"/> 
+</p>
+
+**Obs.: ** Para o perfeito funcionamento da plataforma, devem ser baixados também os PDF's de tutorial presentes no arquivo [Tutoriais.zip](Tutoriais.zip). Ainda para garantir o funcionamento, os arquivos devem ser mantidos no mesmo diretório em que se encontrar a planilha.
+
+- ### Modificação
+
+Para realizar o acesso ao código da plataforma é necessário que se obtenha a aba "Desenvolvedor" na faixa de opções do Excel.
