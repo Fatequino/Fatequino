@@ -42,7 +42,7 @@ Caso seja exibido o aviso abaixo, deve ser pressionado o botão indicado "Habili
 Após o final da configuração, a plataforma pode ser acessada por meio do botão "Registrar nova execução de testes" e os registros já realizados podem ser consultados através das abas da planilha. Conforme imagem abaixo.
 
 <p align="center">
-  <img src="mdfiles/Botao.png" width="600"/> <img src="mdfiles/Abas.png" width="400"/> 
+  <img src="mdfiles/Botao.png" width="550"/> <img src="mdfiles/Abas.png" width="450"/> 
 </p>
 
 **Obs.: ** Para o perfeito funcionamento da plataforma, devem ser baixados também os PDF's de tutorial presentes no arquivo [Tutoriais.zip](Tutoriais.zip). Ainda para garantir o funcionamento, os arquivos devem ser mantidos no mesmo diretório em que se encontrar a planilha.
