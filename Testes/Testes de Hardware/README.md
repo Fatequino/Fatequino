@@ -17,6 +17,7 @@ A Proposta de testes para a movimentação do robô Fatequino consiste na verifi
 
 ## Plataforma de Registro <img src="https://img.icons8.com/color/48/000000/ms-excel.png" align="right"/>
 
+
 Com o intuito de garantir a padronização dos registros de testes a serem efetuados, foi desenvolvida uma plataforma intermediária, por onde as execuções de testes serão adicionadas a uma planilha única.
 
 Esta plataforma foi desenvolvida na linguagem VBA (Visual Basic for Applications) e está atrelada a uma planilha Excel, na qual serão armazenadas as execuções de testes.
