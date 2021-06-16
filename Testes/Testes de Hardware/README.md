@@ -45,7 +45,7 @@ Após o final da configuração, a plataforma pode ser acessada por meio do bot�
   <img src="mdfiles/Botao.png" width="550"/> <img src="mdfiles/Abas.png" width="450"/> 
 </p>
 
-**Obs.: ** Para o perfeito funcionamento da plataforma, devem ser baixados também os PDF's de tutorial presentes no arquivo [Tutoriais.zip](Tutoriais.zip). Ainda para garantir o funcionamento, os arquivos devem ser mantidos no mesmo diretório em que se encontrar a planilha.
+**Obs.: ** Para o perfeito funcionamento da plataforma, devem ser baixados também os PDF's de tutorial presentes no link https://drive.google.com/file/d/1kCzLOiLY1USg4OKBuPx04LiYBVFm7TJU/view?usp=sharing. Ainda para garantir o funcionamento, os arquivos devem ser mantidos no mesmo diretório em que se encontrar a planilha.
 
 - ### Modificação
 
