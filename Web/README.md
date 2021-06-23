@@ -49,3 +49,6 @@ Feche a aba do Duplicator.
 
 17. Faça login com os mesmos dados e siga com as alterações sem interferir com o site em produção
 
+Obs: Para realizar o Backup do arquivo (site) "Backup_Akeeba_20210610_Definitivo" no novo host do site, siga as instruções do vídeo em:
+"https://www.akeeba.com/videos/1215-akeeba-backup-wordpress/1651-abtw05-restoring-site-new-server.html".
+
