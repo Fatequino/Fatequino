@@ -4,7 +4,7 @@ opencv==4.5.1.48
 
 dlib==19.22.0
 
-Pillow==7.0.0
+Pillow==9.3.0
 
 numpy==1.18.1
 
